@@ -11,3 +11,17 @@ numero = int(input('Digite o número: '))
 resposta = multiplicar(numero)
 print(f'O resultado é: {resposta}')
 
+
+
+# Quadrado de um número:
+
+def quadrado(q):
+    n = q ** 2
+    return n
+
+
+numero = int(input('Digite o número: '))
+
+
+resposta = quadrado(numero)
+print(f'O quadrado é: {resposta}')
