@@ -1,12 +1,16 @@
 def multa(m):
-    v = m * 4
+    v = m * VALOR_MULTA
     return v
+
+
+VALOR_MULTA = 4.0
+LIMITE = 100
 
 
 pesca = float(input('Digite a quantidade pescada, em Kg: '))
 
-if pesca > 100:
-    excedente = pesca - 100
+if pesca > LIMITE:
+    excedente = pesca - LIMITE
     vl_mta = multa(excedente)
     print(f'O excedente é de: {excedente} Kg.')
     print(f'A multa a ser paga é de: R$ {vl_mta}')
