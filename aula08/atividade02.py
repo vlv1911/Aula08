@@ -7,9 +7,9 @@ pesca = float(input('Digite a quantidade pescada, em Kg: '))
 
 if pesca > 100:
     excedente = pesca - 100
-    mta = multa(excedente)
+    vl_mta = multa(excedente)
     print(f'O excedente é de: {excedente} Kg.')
-    print(f'A multa a ser paga é de: R$ {mta}')
+    print(f'A multa a ser paga é de: R$ {vl_mta}')
 
 else:
     print('Não há excedente de pesca.')
